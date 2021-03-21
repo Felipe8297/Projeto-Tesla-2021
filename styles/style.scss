@@ -1,0 +1,21 @@
+// Fonte
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+// Cores
+
+$cor-clara-1: #fff;
+
+//Funcoes
+
+@mixin texto-1($tamanho, $cor) {
+    font: 400 $tamanho 'Roboto', sans-serif;
+            color: $cor;
+            letter-spacing: 2px;
+}
+
+// Sass
+
+@import "geral";
+@import "menu";
+@import "destaque";
