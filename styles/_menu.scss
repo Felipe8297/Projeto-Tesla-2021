@@ -1,62 +1,60 @@
 .menu {
-    position:absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+
+  .logo {
     display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
+    align-items: center;
 
-    .logo {
-        display: flex;
-        align-items: center;
-
-        svg {
-            width: 100px;
-            fill: $cor-clara-1;
-
-        }
-
-        .link-principal {
-            @include texto-1(14px, $cor-clara-1);
-
-            &::before {
-                content: '|';
-                padding: 0 16px;
-            }
-        }
+    svg {
+      width: 100px;
+      fill: $cor-clara-1;
     }
 
-    .menu-lista {
-        display:flex;
-    
-        .menu-item {
-            h3, 
-            a {
-                cursor:pointer;
-                display: block;
-                @include texto-1(14px, $cor-clara-1);
-                text-transform:uppercase;
-                line-height: 52px;
-                padding: 0 15px;
-            }
-            
-            .item-lupa {
-                fill: $cor-clara-1;
-                display:block;
-                padding: 18px 0;
-                height: 16px;
-                width:16px;
-            }
+    .link-principal {
+      @include texto-1(14px, $cor-clara-1);
 
-            .item-carrinho {
-                fill: $cor-clara-1;
-                display:block;
-                padding: 15px 0;
-                height: 22px;
-                width:22px;
-            }
-        }
+      &::before {
+        content: "|";
+        padding: 0 16px;
+      }
     }
+  }
+
+  .menu-lista {
+    display: flex;
+
+    .menu-item {
+      h3,
+      a {
+        cursor: pointer;
+        display: block;
+        @include texto-1(14px, $cor-clara-1);
+        text-transform: uppercase;
+        line-height: 52px;
+        padding: 0 15px;
+      }
+
+      .item-lupa {
+        fill: $cor-clara-1;
+        display: block;
+        padding: 18px 0;
+        height: 16px;
+        width: 16px;
+      }
+
+      .item-carrinho {
+        fill: $cor-clara-1;
+        display: block;
+        padding: 15px 0;
+        height: 22px;
+        width: 22px;
+      }
+    }
+  }
 }
-

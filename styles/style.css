@@ -48,7 +48,7 @@ body {
 }
 
 .menu .logo .link-principal::before {
-  content: '|';
+  content: "|";
   padding: 0 16px;
 }
 
@@ -84,5 +84,9 @@ body {
   padding: 15px 0;
   height: 22px;
   width: 22px;
+}
+
+.destaque img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
